@@ -38,7 +38,8 @@ html, body {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 90%;
+    width: 600px; /* Limit max width */
 }
 
 /* Heart Shape */
@@ -131,61 +132,38 @@ button:hover {
     color: white;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query for Tablets and Mobile Devices */
 @media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+    }
+
     .heart-shape {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .heart-shape::before,
     .heart-shape::after {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .love-text {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .quotes {
-        font-size: 1rem;
-        padding: 0 10px; /* Add padding for smaller screens */
+        font-size: 1.1rem;
+        padding: 0 15px; /* Adjust padding for smaller screens */
     }
 
     button {
-        padding: 10px 20px;
-        font-size: 1rem;
+        padding: 12px 22px;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .heart-shape {
-        width: 80px;
-        height: 80px;
-    }
-
-    .heart-shape::before,
-    .heart-shape::after {
-        width: 80px;
-        height: 80px;
-    }
-
-    .love-text {
-        font-size: 2rem;
-    }
-
-    .quotes {
-        font-size: 0.9rem;
-    }
-
-    button {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-}
-
-
-
-
-  
+    .content-container {
+        p
