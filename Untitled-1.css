@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +15,8 @@ html, body {
     text-align: center;
 }
 
-/* Full-Screen Video for Desktop and Mobile */
-#bg-video-desktop,
-#bg-video-mobile {
+/* Full-Screen Video Background */
+#bg-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,12 +26,7 @@ html, body {
     z-index: -1;
 }
 
-/* Mobile video hidden by default */
-#bg-video-mobile {
-    display: none;
-}
-
-/* Content Container Styling */
+/* Content Container */
 .content-container {
     z-index: 1;
     display: flex;
@@ -42,14 +36,19 @@ html, body {
     text-align: center;
     color: white;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
     border-radius: 10px;
     max-width: 90%;
-    width: 600px;
+    width: 600px; /* Limit max width */
 }
 
-/* Heart Shape Animation */
+/* Heart Shape */
+.heart {
+    margin-bottom: 2rem;
+}
+
 .heart-shape {
+    position: relative;
     width: 150px;
     height: 150px;
     background-color: #e91e63;
@@ -82,7 +81,7 @@ html, body {
     50% { transform: scale(1.1) rotate(-45deg); }
 }
 
-/* Love Text Animation */
+/* Text Styling */
 .love-text {
     font-size: 3.5rem;
     color: #d81b60;
@@ -95,19 +94,47 @@ html, body {
     100% { transform: translateY(-20px); }
 }
 
-/* Responsive Video Switch */
+/* Quotes Styling */
+.quotes {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ffeb3b;
+    margin-bottom: 2rem;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.yes-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.no-button {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Media Query for Tablets and Mobile Devices */
 @media (max-width: 768px) {
-    #bg-video-desktop {
-        display: none; /* Hide desktop video on mobile */
-    }
-
-    #bg-video-mobile {
-        display: block; /* Show mobile video */
-    }
-
     .content-container {
-        width: 90%;
-        max-width: none;
         padding: 15px;
     }
 
@@ -116,7 +143,8 @@ html, body {
         height: 120px;
     }
 
-    .heart-shape::before, .heart-shape::after {
+    .heart-shape::before,
+    .heart-shape::after {
         width: 120px;
         height: 120px;
     }
@@ -125,6 +153,32 @@ html, body {
         font-size: 2.8rem;
     }
 
+    .quotes {
+        font-size: 1.1rem;
+        padding: 0 15px; /* Adjust padding for smaller screens */
+    }
+
     button {
         padding: 12px 22px;
-        font-size:
+        font-size: 1.1rem;
+    }
+}
+/* Show desktop video by default */
+#bg-video-desktop {
+    display: block;
+}
+
+/* Show mobile video only on small screens */
+@media (max-width: 768px) {
+    #bg-video-desktop {
+        display: none; /* Hide desktop video */
+    }
+
+    #bg-video-mobile {
+        display: block; /* Show mobile video */
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        p
