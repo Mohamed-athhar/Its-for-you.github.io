@@ -4,49 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>I Love You</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <div class="card text-bg-dark">
+        <video id="bg-video-desktop" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4" class="card-img" alt="..."> <!-- Replace with your love video -->
+            Your browser does not support HTML5 video.
+        </video>
 
-    <!-- Video Background for Desktop -->
-    <video id="bg video" autoplay muted loop>
-        <source src="video.mp4" type="video/mp4" class="card-img">
+        <!-- Mobile Video -->
+    <video id="bg-video-mobile" autoplay muted loop>
+        <source src="mobile-video.mp4" type="newnew.mp4">
         Your browser does not support the video tag.
     </video>
+        
+        <!-- <img src="..." class="card-img" alt="..."> -->
+        <div class="card-img-overlay" style="margin-top: 200px;">
 
-    <!-- Video Background for Mobile -->
-<!--     <video id="bg-video-mobile" autoplay muted loop>
-        <source src="mobile-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video> -->
+     <!-- "I Love You" Animated Text -->
+      
+     <h1 class="text-center",class="love-text" style="margin-bottom: 5.5rem;">▂▃▅▇█▓▒░𝙸 𝚕𝚘𝚟𝚎 𝚢𝚘𝚞░▒▓█▇▅▃▂</h1>
+    </h1>
 
+      <!-- Rotating Quotes Section -->
+      
+      <div class="quotes"  >
+       <h4> <p class="text-center" id="quoteText" style="margin-bottom: 2.5rem;">"𝙇𝙤𝙫𝙚 𝙞𝙨 𝙣𝙤𝙩 𝙖𝙗𝙤𝙪𝙩 𝙝𝙤𝙬 𝙢𝙖𝙣𝙮 𝙙𝙖𝙮𝙨, 𝙢𝙤𝙣𝙩𝙝𝙨, 𝙤𝙧 𝙮𝙚𝙖𝙧𝙨 𝙮𝙤𝙪'𝙫𝙚 𝙗𝙚𝙚𝙣 𝙩𝙤𝙜𝙚𝙩𝙝𝙚𝙧. 𝙇𝙤𝙫𝙚 𝙞𝙨 𝙖𝙗𝙤𝙪𝙩 𝙝𝙤𝙬 𝙢𝙪𝙘𝙝 𝙮𝙤𝙪 𝙡𝙤𝙫𝙚 𝙚𝙖𝙘𝙝 𝙤𝙩𝙝𝙚𝙧 𝙚𝙫𝙚𝙧𝙮 𝙨𝙞𝙣𝙜𝙡𝙚 𝙙𝙖𝙮."</p> </h4>
+    </div>
+
+
+    <!-- Video Background -->
+    
+    <!-- Content Container -->
     <div class="content-container">
-        <h1 class="love-text">▂▃▅▇█▓▒░𝙸 𝚕𝚘𝚟𝚎 𝚢𝚘𝚞░▒▓█▇▅▃▂</h1>
-        <div class="quotes">
-            <h4>
-                <p id="quoteText">"𝙇𝙤𝙫𝙚 𝙞𝙨 𝙣𝙤𝙩 𝙖𝙗𝙤𝙪𝙩 𝙝𝙤𝙬 𝙢𝙖𝙣𝙮 𝙙𝙖𝙮𝙨, 𝙢𝙤𝙣𝙩𝙝𝙨, 𝙤𝙧 𝙮𝙚𝙖𝙧𝙨 𝙮𝙤𝙪'𝙫𝙚 𝙗𝙚𝙚𝙣 𝙩𝙤𝙜𝙚𝙩𝙝𝙚𝙧."</p>
-            </h4>
-        </div>
-
+        <!-- Animated Heart -->
         <div class="heart">
             <div class="heart-shape"></div>
         </div>
+             
 
-        <p class="text-center">𝐌𝐲 𝐡𝐞𝐚𝐫𝐭 𝐛𝐞𝐥𝐨𝐧𝐠𝐬 𝐭𝐨 𝐲𝐨𝐮, 𝐚𝐧𝐝 𝐈 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐬𝐩𝐞𝐧𝐝 𝐟𝐨𝐫𝐞𝐯𝐞𝐫 𝐰𝐢𝐭𝐡 𝐲𝐨𝐮.</p>
-        <p class="text-center">𝐃𝐢𝐝 𝐘𝐨𝐮 𝐋𝐨𝐯𝐞 𝐌𝐞?</p>
+       <h3> <p class="text-center">𝐌𝐲 𝐡𝐞𝐚𝐫𝐭 𝐛𝐞𝐥𝐨𝐧𝐠𝐬 𝐭𝐨 𝐲𝐨𝐮, 𝐚𝐧𝐝 𝐈 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐬𝐩𝐞𝐧𝐝 𝐟𝐨𝐫𝐞𝐯𝐞𝐫 𝐰𝐢𝐭𝐡 𝐲𝐨𝐮. 𝐖𝐢𝐥𝐥 𝐲𝐨𝐮 𝐛𝐞 𝐦𝐢𝐧𝐞?</p> 
 
-        <div class="buttons">
-            <button id="yesButton" class="btn btn-success">𝐌𝐞 𝐭𝐨𝐨! 💕</button>
-            <button id="noButton" class="btn btn-danger">𝐒𝐨𝐫𝐫𝐲, 𝐈 𝐜𝐚𝐧'𝐭 𝐥𝐨𝐯𝐞 😢</button>
+        <p class="text-center" >𝐃𝐢𝐝 𝐘𝐨𝐮 𝐋𝐨𝐯𝐞 𝐌𝐞?</p></h3>
+
+        <!-- Action Buttons --> 
+        <div class="Buttons" style="margin-top: 80px;">
+           <p  class="text-center" >
+                <button id="yesButton"  type="button" class="btn btn-success" style="width: 180px;">𝐌𝐞 𝐭𝐨𝐨!  💕</button>
+                <button id="noButton"  type="button" class="btn btn-danger" style="width: 180px;">𝐒𝐨𝐫𝐫𝐲, 𝐈 𝐜𝐚𝐧'𝐭 𝐥𝐨𝐯𝐞 😢</button>
+            
         </div>
     </div>
 
+</div>
+</div>
+
     <script>
+        // Quotes Rotation
         const quotes = [
             '"𝙔𝙤𝙪 𝙖𝙧𝙚 𝙢𝙮 𝙩𝙤𝙙𝙖𝙮 𝙖𝙣𝙙 𝙖𝙡𝙡 𝙤𝙛 𝙢𝙮 𝙩𝙤𝙢𝙤𝙧𝙧𝙤𝙬𝙨."',
-            '"𝙄 𝙡𝙤𝙤𝙠 𝙖𝙩 𝙮𝙤𝙪 𝙖𝙣𝙙 𝙨𝙚𝙚 𝙩𝙝𝙚 𝙧𝙚𝙨𝙩 𝙤𝙛 𝙢𝙮 𝙡𝙞𝙛𝙚."'
+            '"𝙄𝙣 𝙖𝙡𝙡 𝙩𝙝𝙚 𝙬𝙤𝙧𝙡𝙙, 𝙩𝙝𝙚𝙧𝙚 𝙞𝙨 𝙣𝙤 𝙝𝙚𝙖𝙧𝙩 𝙛𝙤𝙧 𝙢𝙚 𝙡𝙞𝙠𝙚 𝙮𝙤𝙪𝙧𝙨."',
+            '"𝙄 𝙡𝙤𝙤𝙠 𝙖𝙩 𝙮𝙤𝙪 𝙖𝙣𝙙 𝙨𝙚𝙚 𝙩𝙝𝙚 𝙧𝙚𝙨𝙩 𝙤𝙛 𝙢𝙮 𝙡𝙞𝙛𝙚 𝙞𝙣 𝙛𝙧𝙤𝙣𝙩 𝙤𝙛 𝙢𝙮 𝙚𝙮𝙚𝙨."',
+            '"𝙄 𝙘𝙝𝙤𝙤𝙨𝙚 𝙮𝙤𝙪. 𝘼𝙣𝙙 𝙄’𝙡𝙡 𝙘𝙝𝙤𝙤𝙨𝙚 𝙮𝙤𝙪 𝙤𝙫𝙚𝙧 𝙖𝙣𝙙 𝙤𝙫𝙚𝙧, 𝙬𝙞𝙩𝙝𝙤𝙪𝙩 𝙥𝙖𝙪𝙨𝙚, 𝙬𝙞𝙩𝙝𝙤𝙪𝙩 𝙖 𝙙𝙤𝙪𝙗𝙩, 𝙞𝙣 𝙖 𝙝𝙚𝙖𝙧𝙩𝙗𝙚𝙖𝙩."'
         ];
 
         let currentQuoteIndex = 0;
@@ -55,17 +82,20 @@
             quoteText.innerText = quotes[currentQuoteIndex];
             currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
         }
-        setInterval(rotateQuotes, 3000);
+        setInterval(rotateQuotes, 3000); // Change quote every 3 seconds
 
+        // "Me Too" Button Action to Link WhatsApp
         document.getElementById('yesButton').addEventListener('click', function () {
-            let phoneNumber = "94784480660";
-            let message = "Me too! 💕";
+            // Replace with your WhatsApp number
+            let phoneNumber = "94784480660";  // Your WhatsApp number
+            let message = "Me too! I love you more than words can say 💕";
             let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.location.href = whatsappUrl;
         });
 
+        // "Sorry, I can't love" Button Action
         document.getElementById('noButton').addEventListener('click', function () {
-            alert('Sorry 😢');
+            alert('I’m sorry to hear that 😢. I’ll always cherish you.');
         });
     </script>
 </body>
