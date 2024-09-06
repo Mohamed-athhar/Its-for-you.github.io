@@ -163,6 +163,21 @@ button:hover {
         font-size: 1.1rem;
     }
 }
+/* Show desktop video by default */
+#bg-video-desktop {
+    display: block;
+}
+
+/* Show mobile video only on small screens */
+@media (max-width: 768px) {
+    #bg-video-desktop {
+        display: none; /* Hide desktop video */
+    }
+
+    #bg-video-mobile {
+        display: block; /* Show mobile video */
+    }
+}
 
 @media (max-width: 480px) {
     .content-container {
